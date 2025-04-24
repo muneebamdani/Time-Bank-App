@@ -4,7 +4,7 @@ import logo from "../../../images/TimeBankLogo.png"
 
 const Header = () => {
   return (
-    <Navbar expand="lg" bg="light" className="shadow-sm" style={{top:"stick"}}>
+    <Navbar expand="lg" bg="light" className="sticky-top bg-white shadow-sm">
       <Container>
         <Navbar.Brand href="/">
           <img

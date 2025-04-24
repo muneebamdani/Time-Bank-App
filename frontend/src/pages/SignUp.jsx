@@ -14,6 +14,8 @@ import {
   EnvelopeFill, 
   EyeSlashFill 
 } from 'react-bootstrap-icons';
+import Mouse from './extra/Mouse';
+import BackToTop from './extra/BackToTop';
 
 const AuthPage = () => {
   const [formData, setFormData] = useState({
@@ -41,6 +43,9 @@ const AuthPage = () => {
   };
 
   return (
+    <>
+        <Mouse/>
+        <BackToTop/>
     <Container fluid className="main-wrapper gx-0">
       <Row className="gx-0">
         {/* Banner Content - Left Side */}
@@ -220,6 +225,7 @@ const AuthPage = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 

@@ -7,10 +7,14 @@ import WhyChooseUs from './components/about-components/WhyChooseUs';
 import ExplorePopularCategories from './components/about-components/ExplorePopularCategories';
 import OurClients from './components/about-components/OurClients'
 import StartAsSeller from './components/about-components/StartAsSeller'
+import Mouse from './extra/Mouse'
+import BackToTop from './extra/BackToTop'
 
 const AboutPage = () => {
   return (
     <>
+       <Mouse/>
+       <BackToTop/>
     <Header/>
     <Breadcrumb/>
       <section className="about-us-section">

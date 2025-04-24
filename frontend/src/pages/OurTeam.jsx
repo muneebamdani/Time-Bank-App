@@ -2,11 +2,20 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // React Icons for social media icons
 import Header from './components/main-components/Header';
+import BreadCrumbTeam from './components/team-components/BreadCrumbTeam'
+import Mouse from './extra/Mouse';
+import BackToTop from './extra/BackToTop';
+import TeamSkills from './components/team-components/TeamSkills';
+import GetInTouch from './components/team-components/GetInTouch';
+import Footer from './components/main-components/Footer'
 
 const TeamSection = () => {
   return (
     <>
+       <Mouse/>
+       <BackToTop/>
     <Header/>
+    <BreadCrumbTeam />
     <section className="team-section">
       <Container>
         <div className="team-details">
@@ -62,6 +71,9 @@ const TeamSection = () => {
         </Card.Body>
       </Card>
     </div>
+    <TeamSkills/>
+    <GetInTouch />
+    <Footer />
     </>
   );
 };

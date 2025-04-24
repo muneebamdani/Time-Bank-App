@@ -11,6 +11,8 @@ import {
   FormCheck
 } from 'react-bootstrap';
 import { Envelope, Eye, EyeSlash } from 'react-bootstrap-icons';
+import Mouse from './extra/Mouse'
+import BackToTop from './extra/BackToTop'
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -40,6 +42,9 @@ const LoginPage = () => {
   };
 
   return (
+    <>
+    <Mouse/>
+    <BackToTop/>
     <Container fluid className="main-wrapper gx-0">
       <Row className="gx-0">
         {/* Banner Content - Left Side */}
@@ -194,6 +199,7 @@ const LoginPage = () => {
       <div className="mouse-cursor cursor-outer"></div>
       <div className="mouse-cursor cursor-inner"></div>
     </Container>
+    </>
   );
 };
 
