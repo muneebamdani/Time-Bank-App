@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp"
 import SignIn from "./pages/SignIn"
 import About from "./pages/About"
+import OurTeam from "./pages/OurTeam"
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/our-team" element={<OurTeam />} />
       </Routes>
     </Router>
   );

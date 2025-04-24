@@ -1,11 +1,18 @@
 import React from 'react';
-import { Container, Row, Col, Button, Image } from 'react-bootstrap';
-import Header from "../pages/components/Header"
+import { Container, Row, Col, Image} from 'react-bootstrap';
+import Header from "./components/main-components/Header"
+import Breadcrumb from './components/about-components/BreadCrumbAbout';
+import Footer from './components/main-components/Footer'
+import WhyChooseUs from './components/about-components/WhyChooseUs';
+import ExplorePopularCategories from './components/about-components/ExplorePopularCategories';
+import OurClients from './components/about-components/OurClients'
+import StartAsSeller from './components/about-components/StartAsSeller'
 
 const AboutPage = () => {
   return (
     <>
     <Header/>
+    <Breadcrumb/>
       <section className="about-us-section">
         <Container>
           <Row className="align-items-center">
@@ -60,7 +67,11 @@ const AboutPage = () => {
           </Row>
         </Container>
       </section>
-
+      <WhyChooseUs/>
+      <ExplorePopularCategories/>
+      <OurClients/>
+      <StartAsSeller/>
+      <Footer/>
    
     </>
   );

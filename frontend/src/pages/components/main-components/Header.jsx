@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
-import logo from "../../images/TimeBankLogo.png"
+import logo from "../../../images/TimeBankLogo.png"
 
 const Header = () => {
   return (
@@ -19,13 +19,13 @@ const Header = () => {
           <Nav className="mx-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Gigs" id="gigs-dropdown">
-              <NavDropdown.Item href="/gigs/design">Design</NavDropdown.Item>
-              <NavDropdown.Item href="/gigs/tech">Tech</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/gigs/other">Other</NavDropdown.Item>
+              <NavDropdown.Item href="/gigs/all-gigs">All Gigs</NavDropdown.Item>
+              <NavDropdown.Item href="/gigs/categories">Categories</NavDropdown.Item>
+              {/* <NavDropdown.Divider /> */}
+              <NavDropdown.Item href="/gigs/add-gigs">Add Gigs</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/about" className="text-primary">About Us</Nav.Link>
-            <Nav.Link href="/team">Our Team</Nav.Link>
+            <Nav.Link href="/our-team">Our Team</Nav.Link>
             <NavDropdown title="User Dashboard" id="dashboard-dropdown">
               <NavDropdown.Item href="/dashboard/profile">Profile</NavDropdown.Item>
               <NavDropdown.Item href="/dashboard/settings">Settings</NavDropdown.Item>
