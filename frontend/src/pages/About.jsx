@@ -1,18 +1,19 @@
 import React from 'react';
 import { Container, Row, Col, Image} from 'react-bootstrap';
-import Header from "./components/main-components/Header"
+import Header from "./components/main-components/Header";
+import Mouse from './extra/Mouse'
+import BackToTop from './extra/BackToTop'
 import Breadcrumb from './components/about-components/BreadCrumbAbout';
 import Footer from './components/main-components/Footer'
 import WhyChooseUs from './components/about-components/WhyChooseUs';
 import ExplorePopularCategories from './components/about-components/ExplorePopularCategories';
 import OurClients from './components/about-components/OurClients'
 import StartAsSeller from './components/about-components/StartAsSeller'
-import Mouse from './extra/Mouse'
-import BackToTop from './extra/BackToTop'
+
 
 const AboutPage = () => {
   return (
-    <>
+    <div>
        <Mouse/>
        <BackToTop/>
     <Header/>
@@ -77,7 +78,7 @@ const AboutPage = () => {
       <StartAsSeller/>
       <Footer/>
    
-    </>
+    </div>
   );
 };
 

@@ -4,9 +4,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp"
-import SignIn from "./pages/SignIn"
-import About from "./pages/About"
-import OurTeam from "./pages/OurTeam"
+import SignIn from "./pages/SignIn";
+import About from "./pages/About";
+import OurTeam from "./pages/OurTeam";
+import AllGigs from "./pages/components/gigs/AllGigs";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/gigs/all-gigs" element={<AllGigs/>}></Route>
       </Routes>
     </Router>
   );
