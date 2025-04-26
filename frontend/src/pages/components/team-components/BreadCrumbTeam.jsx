@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Breadcrumb } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const BreadcrumbBar = () => {
   return (
@@ -12,12 +11,14 @@ const BreadcrumbBar = () => {
       </div>
       <Container>
         <Row>
-          <Col md={12} xs={12}>
-            <Breadcrumb aria-label="breadcrumb" className="page-breadcrumb">
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-              <Breadcrumb.Item active>Team Details</Breadcrumb.Item>
-            </Breadcrumb>
-            <h2 className="breadcrumb-title">Team Details</h2>
+          <Col md={12}>
+            <nav aria-label="breadcrumb" className="page-breadcrumb">
+              <Breadcrumb>
+                <Breadcrumb.Item href="index.html">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Team</Breadcrumb.Item>
+              </Breadcrumb>
+            </nav>
+            <h2 className="breadcrumb-title">Team</h2>
           </Col>
         </Row>
       </Container>
